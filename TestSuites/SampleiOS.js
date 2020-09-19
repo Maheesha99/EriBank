@@ -7,7 +7,6 @@ describe('Expenses', () => {
     it('TC_01_Verify Balance', () => {
         expectedText = 100;
         driver.pause(3000);
-        driver.acceptAlert()
         //Login to the application
         $("//android.widget.EditText[@text='Username']").setValue("company");  // type user name
         $("//android.widget.EditText[@text='Password']").setValue("company"); //type password
@@ -23,7 +22,7 @@ describe('Expenses', () => {
         console.log("initialBalance >", initialBalance)
         assert.equal(initialBalance, expectedText);  // (actualText, value);
     })
-
+    
     it('TC_02_Make a Payment', () => {
         driver.pause(3000);
         country = 'USA'

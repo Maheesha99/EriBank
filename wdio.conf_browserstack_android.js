@@ -1,4 +1,3 @@
-var login = require('./ReusableComponents/RS_Common');
 var conf = require('./Utils/conf');
 var allureReporter = require('@wdio/allure-reporter').default;
 exports.config = {
@@ -25,33 +24,14 @@ exports.config = {
     ],
     suites: {
         All: [
-            './TestSuites/TS_Smoke.js',
-            './TestSuites/TS_Login.js',
-            './TestSuites/TS_Expenses.js',
-            './TestSuites/TS_Reports.js',
-            './TestSuites/TS_Mileage.js'
-
+            './TestSuites/SampleAndroid.js',
+            './TestSuites/TS_EriBank.js',
         ],
-        Regression: [
-            './TestSuites/TS_Login.js',
-            './TestSuites/TS_Reports.js',
-            './TestSuites/TS_Expenses.js',
-            './TestSuites/TS_Mileage.js'
+        eriBank: [
+            './TestSuites/TS_EriBank.js',
         ],
-        Reports: [
-            './TestSuites/TS_Reports.js'
-        ],
-        Expenses: [
-            './TestSuites/TS_Expenses.js'
-        ],
-        Smoke: [
-            './TestSuites/TS_Smoke.js'
-        ],
-        Login: [
-            './TestSuites/TS_Login.js'
-        ],
-        Mileage: [
-            './TestSuites/TS_Mileage.js'
+        sample: [
+            './TestSuites/SampleAndroid.js'
         ]
     },
     // Patterns to exclude.
@@ -154,7 +134,14 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['appium'],
+    services: [
+        ['appium'],
+        ['applitools', {
+            key: 'yuo0101dRaguKYGJcMTjqJmbuJEk55FLEyk1MowK7ljLM110', // can be passed here or via environment variable `APPLITOOLS_KEY`
+            //serverUrl: 'https://<org>eyesapi.applitools.com', // optional, can be passed here or via environment variable `APPLITOOLS_SERVER_URL`
+            appName: 'EriBank',
+        }]
+    ],
 
     // Appium Service config
     // see details: https://webdriver.io/docs/appium-service.html
@@ -176,7 +163,6 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: [['allure', { outputDir: 'allure-results' }]],
     reporters: [['allure', {
         outputDir: 'allure-results',
         disableWebdriverStepsReporting: true,

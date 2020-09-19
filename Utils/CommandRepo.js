@@ -100,6 +100,13 @@ module.exports.verifyText = function (ele, value) {
     assert.equal(actualText, value);
     allureReporter.endStep();
 };
+module.exports.compareNumbers = function (actualValue, expectedValue) {
+    allureReporter.startStep('Campare given Values');
+    arguments = [{ name: 'Action', value: 'COMPARE NUMBERS' }, { name: 'Actual',value: actualValue }, { name: 'Expected', value:expectedValue }]
+    this.allureReportAddSteps(arguments);
+    assert.equal(actualValue, expectedValue);
+    allureReporter.endStep();
+};
 module.exports.verifyTextContains = function (ele, value, param) {
     xpath = getElement(ele, param);
     actualText = $(xpath).getText();
@@ -126,6 +133,11 @@ module.exports.getElementText = function (ele, param) {
 module.exports.getScreenshot = function () {
     allureReporter.startStep('Get screenshot');
     browser.saveScreenshot('./screenshot/screenshot.png');
+    allureReporter.endStep();
+};
+module.exports.acceptAllert = function () {
+    allureReporter.startStep('Accept Allert');
+    driver.acceptAlert();
     allureReporter.endStep();
 };
 module.exports.ElementPresent = function (ele, param) {

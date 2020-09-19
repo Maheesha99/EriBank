@@ -1,4 +1,3 @@
-var login = require('./ReusableComponents/RS_Common');
 var conf = require('./Utils/conf');
 var allureReporter = require('@wdio/allure-reporter').default;
 exports.config = {
@@ -21,36 +20,15 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './TestSuites/TS_Smoke.js',
+        
     ],
     suites: {
         All: [
-            './TestSuites/TS_Smoke.js',
-            './TestSuites/TS_Login.js',
-            './TestSuites/TS_Reports.js',
-            './TestSuites/TS_Expenses.js',
-            './TestSuites/TS_Mileage.js'
+            './TestSuites/SampleAndroid.js',
+            './TestSuites/TS_EriBank.js',
         ],
-        Regression: [
-            './TestSuites/TS_Login.js',
-            './TestSuites/TS_Reports.js',
-            './TestSuites/TS_Expenses.js',
-            './TestSuites/TS_Mileage.js'
-        ],
-        Reports: [
-            './TestSuites/TS_Reports.js'
-        ],
-        Expenses: [
-            './TestSuites/TS_Expenses.js'
-        ],
-        Smoke: [
-            './TestSuites/TS_Smoke.js'
-        ],
-        Login: [
-            './TestSuites/TS_Login.js'
-        ],
-        Mileage: [
-            './TestSuites/TS_Mileage.js'
+        eriBank: [
+            './TestSuites/TS_EriBank.js',
         ],
         sample: [
             './TestSuites/SampleAndroid.js'
@@ -259,7 +237,7 @@ exports.config = {
         if (test.error !== undefined) {
             browser.takeScreenshot();
         }
-     //   driver.reset();
+        driver.reset();
     },
 
     /**

@@ -25,35 +25,14 @@ exports.config = {
     ],
     suites: {
         All: [
-            './TestSuites/TS_Smoke.js',
-            './TestSuites/TS_Login.js',
-            './TestSuites/TS_Reports.js',
-            './TestSuites/TS_Expenses.js',
-            './TestSuites/TS_Mileage.js'
+            './TestSuites/SampleAndroid.js',
+            './TestSuites/TS_EriBank.js',
         ],
-        Regression: [
-            './TestSuites/TS_Login.js',
-            './TestSuites/TS_Reports.js',
-            './TestSuites/TS_Expenses.js',
-            './TestSuites/TS_Mileage.js'
-        ],
-        Reports: [
-            './TestSuites/TS_Reports.js'
-        ],
-        Expenses: [
-            './TestSuites/TS_Expenses.js'
-        ],
-        Smoke: [
-            './TestSuites/TS_Smoke.js'
-        ],
-        Login: [
-            './TestSuites/TS_Login.js'
-        ],
-        Mileage: [
-            './TestSuites/TS_Mileage.js'
+        eriBank: [
+            './TestSuites/TS_EriBank.js',
         ],
         sample: [
-            './TestSuites/Sample.js'
+            './TestSuites/SampleAndroid.js'
         ]
     },
     // Patterns to exclude.

@@ -4,9 +4,10 @@
   "description": "wdio with allure report",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run wdio.conf_browserstack_ios.js --suite Login",
+    "test": "npx wdio run wdio.conf_android_local.js --suite eriBank",
     "sample": "npx wdio run wdio.conf_android_local.js --suite sample",
-    "report": "allure generate allure-results --clean  && allure open"
+    "report": "allure generate allure-results --clean  && allure open",
+    "bs": "npx wdio run wdio.conf_browserstack_android.js --suite eriBank"
   },
   "author": "Maheesha",
   "license": "ISC",

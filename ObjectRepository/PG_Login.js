@@ -1,33 +1,27 @@
 module.exports = {
-
-    tf_UserName: {
-        iOS: "(//XCUIElementTypeOther[@name='Email address'])[2]/XCUIElementTypeTextField",
-        Android: "//android.widget.EditText[@text='Email address']",
-        ElementName: 'PG_Login.tf_UserName',
+    tf_userName: {
+        iOS: "//XCUIElementTypeTextView[@name='Username']",
+        Android: "//android.widget.EditText[@text='Username']",
+        ElementName: 'PG_Login.tf_userName',
     },
-    tf_Password: {
-        iOS: '(//XCUIElementTypeOther[@name="Password"])[3]/XCUIElementTypeSecureTextField',
+    tf_password: {
+        iOS: "//XCUIElementTypeTextView[@name='Password']",
         Android: "//android.widget.EditText[@text='Password']",
-        ElementName: 'PG_Login.tf_Password',
+        ElementName: 'PG_Login.tf_password',
     },
-    btn_SignIn: {
-        iOS: '//XCUIElementTypeOther[@name="Sign in"]',
-        Android: "//android.widget.TextView[@text='Sign in']",
-        ElementName: 'PG_Login.btn_SignIn',
+    btn_login: {
+        iOS: "//*[@name='Login']",
+        Android: "//android.widget.Button[@text='Login']",
+        ElementName: 'PG_Login.btn_login',
     },
-    lbl_Home: {
-        iOS: '//XCUIElementTypeStaticText[@name="Email"]',
-        Android: "//android.widget.TextView[@text = 'Email']",
-        ElementName: 'PG_Login.lbl_Home',
+    lbl_verifyText: {
+        iOS: '',
+        Android: "//android.widget.TextView[@text='EriBank']",
+        ElementName: 'PG_Login.lbl_verifyText',
     },
-    lbl_ErrorMessages: {
-        iOS: "//XCUIElementTypeStaticText[@name='<>']",
-        Android: "//android.widget.TextView[@text='<>']",
-        ElementName: 'PG_Login.lbl_ErrorMessages',
-    },
-    lbl_Email: {
-        iOS: "//XCUIElementTypeStaticText[@name='Email']",
-        Android: "//android.widget.TextView[@text='Email']",
-        ElementName: 'PG_Login.lbl_Email',
+    btn_logout: {
+        iOS: "",
+        Android: "//android.widget.Button[@text='Logout']",
+        ElementName: 'PG_Login.btn_logout',
     }
 }
