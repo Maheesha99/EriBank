@@ -52,7 +52,7 @@ module.exports = {
 
   //local_android
   deviceName_local_android: 'd5ccda7f',
-  platformVersion_local_android: '9',
+  platformVersion_local_android: '10',
 
   //local_ios
   deviceName_local_ios: '99XT-IPHONE7',

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx wdio run wdio.conf_browserstack_ios.js --suite Login",
+    "sample": "npx wdio run wdio.conf_android_local.js --suite sample",
     "report": "allure generate allure-results --clean  && allure open"
   },
   "author": "Maheesha",
