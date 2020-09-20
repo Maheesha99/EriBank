@@ -3,8 +3,8 @@ module.exports = {
   //browser stack common keys
   user: 'mahishal1',
   key: 'R93RyMqph7CXQgBhLUxp',
-  build: 'EriBank 1.0',
-  project: 'EriBank',
+  build: 'WDIO APP',
+  project: 'WDIO',
   appium_version: '1.15.0',
   browserstack_video:'true',
 
@@ -12,13 +12,13 @@ module.exports = {
   deviceName_browserstack_android:'Samsung Galaxy S20' ,//'Samsung Galaxy Tab S6',//'Samsung Galaxy A10','Samsung Galaxy S20',
   platformVersion_browserstack_android: '10',//'9',//'10',
   sessionName_browserstack_android:'Samsung Galaxy S20',
-  app_browserstack_android:'eriBank',
+  app_browserstack_android:'eriBank', //eriBank //wdioAndroid
 
   //browserstack_ios
-  deviceName_browserstack_ios:'iPad Mini 3', //'iPhone 11 Pro Max',//'iPhone 8 Plus',
-  platformVersion_browserstack_ios: '8',//'13',//'11',
-  sessionName_browserstack_ios:'iPad Mini 3 applitools 2',
-  app_browserstack_ios:'',
+  deviceName_browserstack_ios:'iPhone 11 Pro', //'iPhone 11 Pro Max',//'iPhone 8 Plus',
+  platformVersion_browserstack_ios: '13',//'13',//'11',
+  sessionName_browserstack_ios:'iPhone 11 Pro',
+  app_browserstack_ios:'wdioiOS',
 
   //local_android
   deviceName_local_android: 'd5ccda7f',

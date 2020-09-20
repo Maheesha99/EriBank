@@ -24,14 +24,20 @@ exports.config = {
     ],
     suites: {
         All: [
-            './TestSuites/SampleAndroid.js',
-            './TestSuites/TS_EriBank.js',
+            './TestSuites/EriBank/SampleAndroid.js',
+            './TestSuites/EriBank/TS_EriBank.js',
         ],
-        eriBank: [
-            './TestSuites/TS_EriBank.js',
+        eriBankTS: [
+            './TestSuites/EriBank/TS_EriBank.js',
         ],
-        sample: [
-            './TestSuites/SampleAndroid.js'
+        eriBanksample: [
+            './TestSuites/EriBank/SampleAndroid.js'
+        ],
+        wdioTS: [
+            './TestSuites/WebdriverIOApp/TS_WebdriverIOApp.js',
+        ],
+        wdiosample: [
+            './TestSuites/WebdriverIOApp/SampleAndroid.js'
         ]
     },
     // Patterns to exclude.
@@ -77,7 +83,8 @@ exports.config = {
         platformName: 'Android',
         platformVersion: "10",
         deviceName: "d5ccda7f",
-        app:'/Users/maheeshal/Desktop/apps/EriBank.apk',
+        app:'/Users/maheeshal/Desktop/apps/wdioApp.apk',
+        //app:'/Users/maheeshal/Desktop/apps/EriBank.apk',
     }],
     
     // ===================

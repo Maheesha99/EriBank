@@ -20,18 +20,21 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './TestSuites/TS_Smoke.js',
+        './TestSuites/EriBank/SampleAndroid.js',
     ],
     suites: {
         All: [
-            './TestSuites/SampleAndroid.js',
-            './TestSuites/TS_EriBank.js',
+            './TestSuites/EriBank/SampleAndroid.js',
+            './TestSuites/EriBank/TS_EriBank.js',
         ],
-        eriBank: [
-            './TestSuites/TS_EriBank.js',
+        EribankTS: [
+            './TestSuites/EriBank/TS_EriBank.js',
         ],
-        sample: [
-            './TestSuites/SampleAndroid.js'
+        wdioTS: [
+            './TestSuites/WebdriverIOApp/TS_WebdriverIOApp.js',
+        ],
+        wdiosample: [
+            './TestSuites/WebdriverIOApp/SampleAndroid.js'
         ]
     },
     // Patterns to exclude.

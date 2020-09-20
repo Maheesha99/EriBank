@@ -1,6 +1,6 @@
 var wdio = require('webdriverio');
-var pg_payments = require('./../ObjectRepository/PG_Payment');
-var cmd = require('../Utils/CommandRepo');
+var pg_payments = require('../../ObjectRepository/EriBank/PG_Payment');
+var cmd = require('../../Utils/CommandRepo');
 var allureReporter = require('@wdio/allure-reporter').default;
 
 module.exports.StoreAvailableBalance = function () {

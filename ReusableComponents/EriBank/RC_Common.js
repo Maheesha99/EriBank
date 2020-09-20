@@ -1,6 +1,6 @@
 var wdio = require('webdriverio');
-var pg_login = require('./../ObjectRepository/PG_Login');
-var cmd = require('../Utils/CommandRepo');
+var pg_login = require('../../ObjectRepository/EriBank/PG_Login');
+var cmd = require('../../Utils/CommandRepo');
 var allureReporter = require('@wdio/allure-reporter').default;
 
 module.exports.LoginToTheApplication = function (uname, pwd) {

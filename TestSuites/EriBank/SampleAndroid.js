@@ -3,7 +3,7 @@ var hml = require('xmlhttprequest');
 var allureReporter = require('@wdio/allure-reporter').default;
 var assert = require('assert');
 
-describe('Expenses', () => {
+describe('EriBank', () => {
     it('TC_01_Verify Balance', () => {
         expectedText = 100;
         driver.pause(3000);
@@ -25,9 +25,10 @@ describe('Expenses', () => {
     })
 
     it('TC_02_Make a Payment', () => {
-        driver.pause(3000);
         country = 'USA'
         amount = 10;
+        
+        driver.pause(3000);
         driver.acceptAlert()
 
         //Login to the application

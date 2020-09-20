@@ -4,8 +4,10 @@
   "description": "wdio with allure report",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run wdio.conf_android_local.js --suite eriBank",
-    "sample": "npx wdio run wdio.conf_android_local.js --suite sample",
+    "ETS": "npx wdio run wdio.conf_android_local.js --suite eriBankTS",
+    "ESample": "npx wdio run wdio.conf_android_local.js --suite eriBanksample",
+    "WSample":"npx wdio run wdio.conf_android_local.js --suite wdiosample",
+    "WTS":"npx wdio run wdio.conf_android_local.js --suite wdioTS",
     "report": "allure generate allure-results --clean  && allure open",
     "bs": "npx wdio run wdio.conf_browserstack_android.js --suite eriBank"
   },
