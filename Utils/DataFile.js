@@ -4,10 +4,20 @@ module.exports.SuccessLoginCredentials = {
     pwd: 'company',
 }
 //Payment data
-module.exports.Payment_TC01 =
-{
-    expectedAmount: 100,
-}
+module.exports.Login_TC01 = [
+    {
+        tcName: "TC_01_Login to the application",
+        userName: "Test@gmail.com",
+        password: "test1234",
+        alertText: "Success\nYou are logged in!"
+    }, 
+    // {
+    //     tcName: "TC_03_Login to the application",
+    //     userName: "sample@gmail.com",
+    //     password: "sample12",
+    //     alertText: "Success\nYou are logged in!"
+    // }
+]
 module.exports.Payment_TC02 =
 {
     phone: '0112676545',

@@ -20,21 +20,18 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './TestSuites/EriBank/SampleAndroid.js',
+        './TestSuites/TS_WebdriverIOApp.js',
     ],
     suites: {
         All: [
-            './TestSuites/EriBank/SampleAndroid.js',
-            './TestSuites/EriBank/TS_EriBank.js',
-        ],
-        EribankTS: [
-            './TestSuites/EriBank/TS_EriBank.js',
+            './TestSuites/TS_WebdriverIOApp.js',
+            './TestSuites/SampleAndroid.js',
         ],
         wdioTS: [
-            './TestSuites/WebdriverIOApp/TS_WebdriverIOApp.js',
+            './TestSuites/TS_WebdriverIOApp.js',
         ],
         wdiosample: [
-            './TestSuites/WebdriverIOApp/SampleAndroid.js'
+            './TestSuites/SampleAndroid.js'
         ]
     },
     // Patterns to exclude.
@@ -140,9 +137,9 @@ exports.config = {
     services: [
         ['appium'],
         ['applitools', {
-            key: 'yuo0101dRaguKYGJcMTjqJmbuJEk55FLEyk1MowK7ljLM110', // can be passed here or via environment variable `APPLITOOLS_KEY`
+            key: '', // can be passed here or via environment variable `APPLITOOLS_KEY`
             //serverUrl: 'https://<org>eyesapi.applitools.com', // optional, can be passed here or via environment variable `APPLITOOLS_SERVER_URL`
-            appName: 'EriBank',
+            appName: 'webdriverIO sample app',
         }]
     ],
 
