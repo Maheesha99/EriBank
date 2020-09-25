@@ -1,8 +1,8 @@
 module.exports = {
 
   //browser stack common keys
-  user: 'maheesha1',
-  key: 'zD66vXbYCdopAyUpAZYc',
+  user: '',
+  key: '',
   build: 'WDIO APP',
   project: 'WDIO',
   appium_version: '1.15.0',
