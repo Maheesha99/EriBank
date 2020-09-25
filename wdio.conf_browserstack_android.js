@@ -137,7 +137,7 @@ exports.config = {
     services: [
         ['appium'],
         ['applitools', {
-            key: '', // can be passed here or via environment variable `APPLITOOLS_KEY`
+            key: 'yuo0101dRaguKYGJcMTjqJmbuJEk55FLEyk1MowK7ljLM110', // can be passed here or via environment variable `APPLITOOLS_KEY`
             //serverUrl: 'https://<org>eyesapi.applitools.com', // optional, can be passed here or via environment variable `APPLITOOLS_SERVER_URL`
             appName: 'webdriverIO sample app',
         }]
